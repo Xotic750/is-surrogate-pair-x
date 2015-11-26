@@ -36,7 +36,7 @@ surrogate pair.
  UTF-16 surrogate pair; otherwise false.  
 **Example**  
 ```js
-var isSurrogatePair = require('is-surrogate-pair-x);
+var isSurrogatePair = require('is-surrogate-pair-x');
 var test1 = 'a';
 var test2 = '𠮟';
 
