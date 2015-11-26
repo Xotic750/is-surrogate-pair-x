@@ -34,3 +34,12 @@ surrogate pair.
 **Kind**: Exported function  
 **Returns**: <code>boolean</code> - Returns true if the two characters create a valid
  UTF-16 surrogate pair; otherwise false.  
+**Example**  
+```js
+var isSurrogatePair = require('is-surrogate-pair-x);
+var test1 = 'a';
+var test2 = '𠮟';
+
+isSurrogatePair(test1.charAt(0), test1.charAt(1)); // false
+isSurrogatePair(test2.charAt(0), test2.charAt(1)); // true
+```
