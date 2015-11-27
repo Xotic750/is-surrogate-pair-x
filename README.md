@@ -22,7 +22,7 @@ alt="npm version" height="18">
 
 isSurrogatePair module.
 
-**Version**: 1.0.0  
+**Version**: 1.0.1  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
@@ -34,6 +34,12 @@ surrogate pair.
 **Kind**: Exported function  
 **Returns**: <code>boolean</code> - Returns true if the two characters create a valid
  UTF-16 surrogate pair; otherwise false.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| char1 | <code>\*</code> | The first character of a suspected surrogate pair. |
+| char2 | <code>\*</code> | The second character of a suspected surrogate pair. |
+
 **Example**  
 ```js
 var isSurrogatePair = require('is-surrogate-pair-x');
