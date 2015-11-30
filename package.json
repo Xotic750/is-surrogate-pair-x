@@ -1,6 +1,6 @@
 {
     "name": "is-surrogate-pair-x",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "isSurrogatePair module.",
     "homepage": "https://github.com/Xotic750/is-surrogate-pair-x",
     "author": {
@@ -27,7 +27,9 @@
     "bugs": {
         "url": "https://github.com/Xotic750/is-surrogate-pair-x/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+      "es-abstract": "^1.4.3"
+    },
     "devDependencies": {
       "es5-shim": "^4.3.1",
       "jscs": "^2.5.1",
