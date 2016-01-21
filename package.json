@@ -1,13 +1,13 @@
 {
   "name": "is-surrogate-pair-x",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "isSurrogatePair module.",
   "homepage": "https://github.com/Xotic750/is-surrogate-pair-x",
   "author": {
     "name": "Graham Fairweather",
     "email": "xotic750@gmail.com"
   },
-  "copyright": "Copyright (c) 2015",
+  "copyright": "Copyright (c) 2015-2016",
   "keywords": [
     "isSurrogatePair",
     "module",
@@ -27,9 +27,7 @@
   "bugs": {
     "url": "https://github.com/Xotic750/is-surrogate-pair-x/issues"
   },
-  "dependencies": {
-    "es-abstract": "^1.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "es5-shim": "^4.4.1",
     "es6-shim": "^0.34.1",

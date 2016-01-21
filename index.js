@@ -2,7 +2,8 @@
  * @file
  * <a href="https://travis-ci.org/Xotic750/is-surrogate-pair-x"
  * title="Travis status">
- * <img src="https://travis-ci.org/Xotic750/is-surrogate-pair-x.svg?branch=master"
+ * <img
+ * src="https://travis-ci.org/Xotic750/is-surrogate-pair-x.svg?branch=master"
  * alt="Travis status" height="18">
  * </a>
  * <a href="https://david-dm.org/Xotic750/is-surrogate-pair-x"
@@ -10,7 +11,8 @@
  * <img src="https://david-dm.org/Xotic750/is-surrogate-pair-x.svg"
  * alt="Dependency status" height="18"/>
  * </a>
- * <a href="https://david-dm.org/Xotic750/is-surrogate-pair-x#info=devDependencies"
+ * <a
+ * href="https://david-dm.org/Xotic750/is-surrogate-pair-x#info=devDependencies"
  * title="devDependency status">
  * <img src="https://david-dm.org/Xotic750/is-surrogate-pair-x/dev-status.svg"
  * alt="devDependency status" height="18"/>
@@ -39,7 +41,7 @@
  * `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
  * behave as closely as possible to ECMAScript 6 (Harmony).
  *
- * @version 1.0.6
+ * @version 1.0.7
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -59,8 +61,7 @@
 ;(function () {
   'use strict';
 
-  var ES = require('es-abstract/es6'),
-    pCharCodeAt = String.prototype.charCodeAt;
+  var pCharCodeAt = String.prototype.charCodeAt;
 
   /**
    * Tests if the two character arguments combined are a valid UTF-16
@@ -79,11 +80,10 @@
    * isSurrogatePair(test2.charAt(0), test2.charAt(1)); // true
    */
   module.exports = function isSurrogatePair(char1, char2) {
-    var code1, code2;
     if (typeof char1 === 'string' && typeof char2 === 'string') {
-      code1 = ES.Call(pCharCodeAt, char1);
+      var code1 = pCharCodeAt.call(char1);
       if (code1 >= 0xD800 && code1 <= 0xDBFF) {
-        code2 = ES.Call(pCharCodeAt, char2);
+        var code2 = pCharCodeAt.call(char2);
         if (code2 >= 0xDC00 && code2 <= 0xDFFF) {
           return true;
         }

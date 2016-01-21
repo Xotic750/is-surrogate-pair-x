@@ -2,7 +2,8 @@
 ## is-surrogate-pair-x
 <a href="https://travis-ci.org/Xotic750/is-surrogate-pair-x"
 title="Travis status">
-<img src="https://travis-ci.org/Xotic750/is-surrogate-pair-x.svg?branch=master"
+<img
+src="https://travis-ci.org/Xotic750/is-surrogate-pair-x.svg?branch=master"
 alt="Travis status" height="18">
 </a>
 <a href="https://david-dm.org/Xotic750/is-surrogate-pair-x"
@@ -10,7 +11,8 @@ title="Dependency status">
 <img src="https://david-dm.org/Xotic750/is-surrogate-pair-x.svg"
 alt="Dependency status" height="18"/>
 </a>
-<a href="https://david-dm.org/Xotic750/is-surrogate-pair-x#info=devDependencies"
+<a
+href="https://david-dm.org/Xotic750/is-surrogate-pair-x#info=devDependencies"
 title="devDependency status">
 <img src="https://david-dm.org/Xotic750/is-surrogate-pair-x/dev-status.svg"
 alt="devDependency status" height="18"/>
@@ -39,7 +41,7 @@ es5-shim.js to be able to work properly.
 `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
 behave as closely as possible to ECMAScript 6 (Harmony).
 
-**Version**: 1.0.6  
+**Version**: 1.0.7  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
