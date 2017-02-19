@@ -1,4 +1,5 @@
 <a name="module_is-surrogate-pair-x"></a>
+
 ## is-surrogate-pair-x
 <a href="https://travis-ci.org/Xotic750/is-surrogate-pair-x"
 title="Travis status">
@@ -41,11 +42,12 @@ es5-shim.js to be able to work properly.
 `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
 behave as closely as possible to ECMAScript 6 (Harmony).
 
-**Version**: 1.0.12  
+**Version**: 1.1.0  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_is-surrogate-pair-x--module.exports"></a>
+
 ### `module.exports(char1, char2)` ⇒ <code>boolean</code> ⏏
 Tests if the two character arguments combined are a valid UTF-16
 surrogate pair.
