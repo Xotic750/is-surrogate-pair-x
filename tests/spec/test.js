@@ -50,7 +50,10 @@
         return isSurrogatePair(item.charAt(0), item.charAt(1));
       });
       expect(actual).toEqual(expected);
+      expect(isSurrogatePair('\uD87E\uDC04', '\uDC04')).toBe(false);
+      expect(isSurrogatePair('\uD87E\uDC04', '\uDC04\uDC04')).toBe(false);
     });
+
     it('should confirm that these are surrogate pairs', function () {
       var values = [
         '𠮟',

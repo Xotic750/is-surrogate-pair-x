@@ -1,6 +1,6 @@
 {
   "name": "is-surrogate-pair-x",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Tests if 2 characters together are a surrogate pair.",
   "homepage": "https://github.com/Xotic750/is-surrogate-pair-x",
   "author": {
@@ -27,7 +27,9 @@
   "bugs": {
     "url": "https://github.com/Xotic750/is-surrogate-pair-x/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "is-string": "^1.0.4"
+  },
   "devDependencies": {
     "@ljharb/eslint-config": "^11.0.0",
     "browserify": "^14.1.0",
@@ -40,11 +42,11 @@
     "jasmine-node": "^1.14.5",
     "jsdoc-to-markdown": "^3.0.0",
     "json3": "^3.3.2",
-    "make-jasmine-spec-runner-html": "^1.0.4",
+    "make-jasmine-spec-runner-html": "^1.1.0",
     "nodemon": "^1.11.0",
     "nsp": "^2.6.3",
-    "replace-x": "^1.0.0",
-    "uglify-js": "^2.8.16"
+    "replace-x": "^1.1.1",
+    "uglify-js": "^2.8.18"
   },
   "scripts": {
     "build": "npm run build:setver && npm run security && npm run eslint && npm run browserify && npm run uglify && npm run docs && npm run build:jasmine && npm test",

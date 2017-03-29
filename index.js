@@ -26,20 +26,22 @@
  *
  * Requires ES3 or above.
  *
- * @version 1.1.1
+ * @version 1.2.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module is-surrogate-pair-x
  */
 
-/* eslint strict: 1 */
+/* eslint strict: 1, max-statements: 1 */
 
 /* global module */
 
 ;(function () { // eslint-disable-line no-extra-semi
 
   'use strict';
+
+  var isString = require('is-string');
 
   /**
    * Tests if the two character arguments combined are a valid UTF-16
@@ -51,6 +53,7 @@
    *  UTF-16 surrogate pair; otherwise false.
    * @example
    * var isSurrogatePair = require('is-surrogate-pair-x');
+   *
    * var test1 = 'a';
    * var test2 = '𠮟';
    *
@@ -58,7 +61,7 @@
    * isSurrogatePair(test2.charAt(0), test2.charAt(1)); // true
    */
   module.exports = function isSurrogatePair(char1, char2) {
-    if (typeof char1 === 'string' && typeof char2 === 'string') {
+    if (isString(char1) && char1.length === 1 && isString(char2) && char2.length === 1) {
       var code1 = char1.charCodeAt();
       if (code1 >= 0xD800 && code1 <= 0xDBFF) {
         var code2 = char2.charCodeAt();

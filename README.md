@@ -27,7 +27,7 @@ Tests if 2 characters together are a surrogate pair.
 
 Requires ES3 or above.
 
-**Version**: 1.1.1  
+**Version**: 1.2.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
@@ -49,6 +49,7 @@ surrogate pair.
 **Example**  
 ```js
 var isSurrogatePair = require('is-surrogate-pair-x');
+
 var test1 = 'a';
 var test2 = '𠮟';
 
