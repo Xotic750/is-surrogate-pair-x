@@ -27,7 +27,7 @@ Tests if 2 characters together are a surrogate pair.
 
 Requires ES3 or above.
 
-**Version**: 1.2.0  
+**Version**: 1.3.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
@@ -39,7 +39,7 @@ surrogate pair.
 
 **Kind**: Exported function  
 **Returns**: <code>boolean</code> - Returns true if the two characters create a valid
- UTF-16 surrogate pair; otherwise false.  
+ 'UTF-16' surrogate pair; otherwise false.  
 
 | Param | Type | Description |
 | --- | --- | --- |
