@@ -15,8 +15,8 @@ var isString = require('is-string');
  * Tests if the two character arguments combined are a valid UTF-16
  * surrogate pair.
  *
- * @param {*} char1 - The character combination or if char 2 is supplied hten
- * §the first character of a suspected surrogate pair.
+ * @param {*} char1 - The character combination, or if `char2` is supplied then
+ *  the first character of a suspected surrogate pair.
  * @param {*} [char2] - The second character of a suspected surrogate pair.
  * @returns {boolean} Returns true if the two characters create a valid
  *  'UTF-16' surrogate pair; otherwise false.

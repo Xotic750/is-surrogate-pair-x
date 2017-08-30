@@ -39,7 +39,7 @@ surrogate pair.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| char1 | <code>\*</code> | The character combination or if char 2 is supplied hten §the first character of a suspected surrogate pair. |
+| char1 | <code>\*</code> | The character combination, or if `char2` is supplied then  the first character of a suspected surrogate pair. |
 | [char2] | <code>\*</code> | The second character of a suspected surrogate pair. |
 
 **Example**  
