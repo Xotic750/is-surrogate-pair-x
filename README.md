@@ -23,13 +23,13 @@
 ## is-surrogate-pair-x
 Tests if 2 characters together are a surrogate pair.
 
-**Version**: 1.4.0  
+**Version**: 2.0.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_is-surrogate-pair-x--module.exports"></a>
 
-### `module.exports(char1, char2)` ⇒ <code>boolean</code> ⏏
+### `module.exports(char1, [char2])` ⇒ <code>boolean</code> ⏏
 Tests if the two character arguments combined are a valid UTF-16
 surrogate pair.
 
@@ -39,8 +39,8 @@ surrogate pair.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| char1 | <code>\*</code> | The first character of a suspected surrogate pair. |
-| char2 | <code>\*</code> | The second character of a suspected surrogate pair. |
+| char1 | <code>\*</code> | The character combination or if char 2 is supplied hten §the first character of a suspected surrogate pair. |
+| [char2] | <code>\*</code> | The second character of a suspected surrogate pair. |
 
 **Example**  
 ```js
@@ -49,6 +49,8 @@ var isSurrogatePair = require('is-surrogate-pair-x');
 var test1 = 'a';
 var test2 = '𠮟';
 
+isSurrogatePair(test1); // false
 isSurrogatePair(test1.charAt(0), test1.charAt(1)); // false
+isSurrogatePair(test2); // true
 isSurrogatePair(test2.charAt(0), test2.charAt(1)); // true
 ```
