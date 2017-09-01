@@ -1,6 +1,6 @@
 /**
  * @file Tests if 2 characters together are a surrogate pair.
- * @version 2.0.0
+ * @version 2.0.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -10,6 +10,7 @@
 'use strict';
 
 var isString = require('is-string');
+var charCodeAt = String.prototype.charCodeAt;
 
 /**
  * Tests if the two character arguments combined are a valid UTF-16
@@ -41,8 +42,8 @@ module.exports = function isSurrogatePair(char1) {
   var second;
   if (argsLength === 1) {
     if (isString(char1) && char1.length === 2) {
-      first = char1.charCodeAt(0);
-      second = char1.charCodeAt(1);
+      first = charCodeAt.call(char1, 0);
+      second = charCodeAt.call(char1, 1);
     } else {
       return false;
     }
@@ -52,8 +53,8 @@ module.exports = function isSurrogatePair(char1) {
       return false;
     }
 
-    first = char1.charCodeAt();
-    second = char2.charCodeAt();
+    first = charCodeAt.call(char1, 0);
+    second = charCodeAt.call(char2, 0);
   }
 
   return first >= 0xD800 && first <= 0xDBFF && second >= 0xDC00 && second <= 0xDFFF;
