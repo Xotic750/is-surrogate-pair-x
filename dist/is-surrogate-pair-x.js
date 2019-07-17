@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-17T18:21:07.238Z",
+  "date": "2019-07-17T23:26:06.189Z",
   "describe": "",
   "description": "Tests if 2 characters together are a surrogate pair.",
   "file": "is-surrogate-pair-x.js",
   "hash": "71ada446baccbbdda154",
   "license": "MIT",
-  "version": "3.0.8"
+  "version": "3.0.9"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
