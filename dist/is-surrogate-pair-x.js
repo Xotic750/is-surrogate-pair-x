@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-16T21:04:15.046Z",
+  "date": "2019-07-17T13:07:50.734Z",
   "describe": "",
   "description": "Tests if 2 characters together are a surrogate pair.",
   "file": "is-surrogate-pair-x.js",
-  "hash": "57a3eccfd30fadb32f18",
+  "hash": "71ada446baccbbdda154",
   "license": "MIT",
   "version": "3.0.6"
 }
@@ -156,7 +156,6 @@ module.exports = function isString(value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isSurrogatePair; });
 /* harmony import */ var is_string__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var is_string__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(is_string__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -173,7 +172,7 @@ var _ref = '',
  *  'UTF-16' surrogate pair; otherwise false.
  */
 
-function isSurrogatePair(char1, char2) {
+var isSurrogatePair = function isSurrogatePair(char1, char2) {
   var argsLength = arguments.length;
 
   if (argsLength < 1) {
@@ -200,7 +199,9 @@ function isSurrogatePair(char1, char2) {
   }
 
   return first >= 0xd800 && first <= 0xdbff && second >= 0xdc00 && second <= 0xdfff;
-}
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (isSurrogatePair);
 
 
 

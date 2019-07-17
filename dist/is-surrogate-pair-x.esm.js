@@ -12,7 +12,7 @@ var _ref = '',
  *  'UTF-16' surrogate pair; otherwise false.
  */
 
-export default function isSurrogatePair(char1, char2) {
+var isSurrogatePair = function isSurrogatePair(char1, char2) {
   var argsLength = arguments.length;
 
   if (argsLength < 1) {
@@ -39,6 +39,8 @@ export default function isSurrogatePair(char1, char2) {
   }
 
   return first >= 0xd800 && first <= 0xdbff && second >= 0xdc00 && second <= 0xdfff;
-}
+};
+
+export default isSurrogatePair;
 
 //# sourceMappingURL=is-surrogate-pair-x.esm.js.map

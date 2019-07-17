@@ -12,7 +12,7 @@ const {charCodeAt} = '';
  * @returns {boolean} Returns true if the two characters create a valid
  *  'UTF-16' surrogate pair; otherwise false.
  */
-export default function isSurrogatePair(char1, char2) {
+const isSurrogatePair = function isSurrogatePair(char1, char2) {
   const argsLength = arguments.length;
 
   if (argsLength < 1) {
@@ -39,4 +39,6 @@ export default function isSurrogatePair(char1, char2) {
   }
 
   return first >= 0xd800 && first <= 0xdbff && second >= 0xdc00 && second <= 0xdfff;
-}
+};
+
+export default isSurrogatePair;
