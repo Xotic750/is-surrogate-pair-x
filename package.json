@@ -1,6 +1,6 @@
 {
   "name": "is-surrogate-pair-x",
-  "version": "3.0.17",
+  "version": "3.0.18",
   "description": "Tests if 2 characters together are a surrogate pair.",
   "homepage": "https://github.com/Xotic750/is-surrogate-pair-x",
   "author": {
@@ -87,7 +87,7 @@
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.13.6",
-    "eslint-plugin-jsdoc": "^15.7.1",
+    "eslint-plugin-jsdoc": "^15.7.2",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-lodash": "^5.1.0",
     "eslint-plugin-no-use-extend-native": "^0.4.1",
