@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-2017",
-  "date": "2019-07-31T15:38:02.491Z",
+  "date": "2019-07-31T17:08:02.102Z",
   "describe": "",
   "description": "Tests if 2 characters together are a surrogate pair.",
   "file": "is-surrogate-pair-x.js",
