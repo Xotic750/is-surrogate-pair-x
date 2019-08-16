@@ -1,6 +1,15 @@
 import isSurrogatePair from '../src/is-surrogate-pair-x';
 
 describe('basic tests', function() {
+  it('false', function() {
+    expect.assertions(5);
+    expect(isSurrogatePair()).toBe(false);
+    expect(isSurrogatePair(undefined)).toBe(false);
+    expect(isSurrogatePair(null)).toBe(false);
+    expect(isSurrogatePair(1)).toBe(false);
+    expect(isSurrogatePair(true)).toBe(false);
+  });
+
   it('should confirm that these are not surrogate pairs', function() {
     expect.assertions(6);
     const values = ['a', '\uDC04\uD87E', String.fromCharCode(0xdf81) + String.fromCharCode(0xd800)];

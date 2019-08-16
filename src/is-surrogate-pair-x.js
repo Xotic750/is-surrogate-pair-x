@@ -1,6 +1,7 @@
 import isString from 'is-string';
+import methodize from 'simple-methodize-x';
 
-const {charCodeAt} = '';
+const methodizedCharCodeAt = methodize(''.charCodeAt);
 
 const checkPair1 = function checkPair1(char1) {
   return isString(char1) && char1.length === 2;
@@ -13,8 +14,8 @@ const checkPair2 = function checkPair2(char1, char2) {
 const getPair1 = function getPair1(char1) {
   if (checkPair1(char1)) {
     return {
-      first: charCodeAt.call(char1, 0),
-      second: charCodeAt.call(char1, 1),
+      first: methodizedCharCodeAt(char1, 0),
+      second: methodizedCharCodeAt(char1, 1),
     };
   }
 
@@ -24,8 +25,8 @@ const getPair1 = function getPair1(char1) {
 const getPair2 = function getPair2(char1, char2) {
   if (checkPair2(char1, char2)) {
     return {
-      first: charCodeAt.call(char1, 0),
-      second: charCodeAt.call(char2, 0),
+      first: methodizedCharCodeAt(char1, 0),
+      second: methodizedCharCodeAt(char2, 0),
     };
   }
 
